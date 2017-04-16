@@ -140,6 +140,8 @@ h2 {
   font-size: 35px;
 }
 
+/** To remove?
+
 .italics {
   font-family: 'playfair_display';
   font-style: italic;
@@ -148,7 +150,9 @@ h2 {
 .bold {
   font-family: 'playfair_display';
   font-weight: bold;
-}
+} 
+
+**/
 
 p {
   text-align: center;
@@ -200,17 +204,32 @@ ul {
   text-transform: uppercase;
 }
 
+.products {
+  padding: 0px auto;
+}
+
 .products li {
+  width: 280px;
+  margin: 20px 0px;
+  padding: 0px 5px;
   display: inline-block;
+/**  border: 1px solid black;**/
   text-align: center;
 }
 
+.products img {
+  width: 90%;
+}
+
 .products h3 {
+  widows: 100%;
   color: #e2574c;
+  font-size: 1.4em;
 }
 
 .products p {
   text-transform: uppercase;
+  color: #969696;
 }
 
 .updates {
