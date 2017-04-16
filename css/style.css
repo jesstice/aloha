@@ -126,6 +126,8 @@ header:after {
 
 h1, h2, h3 {
   font-family: 'playfair_display';
+  font-weight: normal;
+
 }
 
 h2 {
@@ -146,12 +148,14 @@ h2 {
 p {
   text-align: center;
   font-family: 'ralewaylight';
-  color: #2d2d2d;
   font-size: 16px;
+  color: #2d2d2d;
 }
 
 ul {
   list-style-type: none;
+  font-family: 'ralewaylight';
+
 }
 
 .banner {
@@ -171,18 +175,19 @@ ul {
 
 .banner p {
   width: inherit;
-  padding: 200px 0px 10px 0px;
+  margin: 200px 0px 10px 0px;
   display: inline-block;  
   font-size: 12px;
   font-family: 'ralewaymedium';
   text-transform: uppercase;
+  color: inherit;
 }
 
 .banner h1 {
   width: inherit;
-  margin: 0px;
+  margin: 10px 0px 200px 0px;
   display: inline-block;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .styles {
@@ -207,20 +212,31 @@ ul {
   text-align: center;
 }
 
+form {
+  margin: 40px;
+  border: 1px solid #d7d7d7;
+}
+
 footer {
+  height: 250px;
   margin: 10px 0px 0px 0px;
   background-color: #242424;
-  height: 250px;
   color: white;
 }
 
-.contact {
+.companyinfo {
   float: left;
-  margin: 50px 40px;
+  margin: 40px 0px 0px 40px;
+  padding: 0px;
 }
 
-.contact p {
+.contact , .contact a:link {
+  color: white;
+}
+
+.companyinfo p {
   text-align: left;
+  font-family: 'playfair_display';
 }
 
 .social-media {
