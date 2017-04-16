@@ -110,7 +110,12 @@ header li {
   display: inline;
 }
 
+.logo {
+  height: 60px;
+}
+
 .cart-icon {
+  height: 60px;
   float: right;
 }
 
@@ -245,6 +250,10 @@ form input {
   border: 0px;
 }
 
+form input[placeholder="Your Email"] {
+  color: #969696;
+}
+
 form button {
   margin: 0px 10px 0px 0px;
   padding: 10px 20px;
@@ -266,15 +275,16 @@ footer {
   float: left;
   margin: 40px 0px 0px 40px;
   padding: 0px;
+  text-align: left;
+  font-family: 'playfair_display';
 }
 
-.contact , .contact a:link {
+.companyinfo p, .companyinfo a:link {
   color: white;
 }
 
-.companyinfo p {
-  text-align: left;
-  font-family: 'playfair_display';
+.companyinfo span {
+  color: #969696;
 }
 
 .social-media {
