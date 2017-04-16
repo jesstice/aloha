@@ -209,12 +209,50 @@ ul {
 }
 
 .updates {
+  height: 325px; 
   text-align: center;
+  background-image: url("../images/wave-bkgd.jpg");
+  background-size: 110%;
+  background-position: center bottom;
+  color: white;
+}
+
+.updates h2 {
+  margin: 45px 0px 10px 0px;
+  padding: 20px auto;
+  display: inline-block;
+}
+
+.updates p {
+  color: white;
 }
 
 form {
-  margin: 40px;
-  border: 1px solid #d7d7d7;
+  width: 450px;
+  height: 45px;
+  margin: 40px auto;
+  padding: 5px 1px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+}
+
+form input {
+  height: 35px;
+  margin: 5px 0px 5px 20px;
+  float: left;
+  border: 0px;
+}
+
+form button {
+  margin: 0px 10px 0px 0px;
+  padding: 10px 20px;
+  float: right;
+  border: 1px solid #e2574c;
+  border-radius: 30px;
+  background-color: #e2574c;
+  color: white;
 }
 
 footer {
