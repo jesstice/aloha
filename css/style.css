@@ -95,7 +95,7 @@
 }
 
 body {
-  width: 1240px;
+  width: 100%;
 }
 
 header ul {
@@ -142,7 +142,6 @@ h2 {
   font-size: 35px;
   font-style: italic;
 }
-
 
 strong {
   font-weight: bold;
@@ -213,6 +212,7 @@ li a:hover {
 
 .mens {
   width: 45%;
+  height: 250px;
   background-image: url("../images/mens-category.jpg");
 }
 
