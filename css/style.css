@@ -160,8 +160,18 @@ ul {
   font-family: 'ralewaylight';
 }
 
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li a:hover {
+  color: #b64036;
+}
+
 .banner {
   height: 500px;
+  margin: 0 0 50px 0;
   text-align: center;
   background: 
     linear-gradient( rgba(36, 36, 36, 0.3),
@@ -193,6 +203,10 @@ ul {
   font-size: 55px;
 }
 
+.styles {
+  margin: 50px 0 0 0;
+}
+
 .mens, .trends, .glasses, .sale, .bags, .womens {
   height: 250px;
   display: inline-block;
@@ -204,10 +218,6 @@ ul {
   font-size: 2em;
   color: white;
   text-shadow: 1px 1px 5px #242424; 
-}
-
-li a:hover {
-  color: #b64036;
 }
 
 .mens {
