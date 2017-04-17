@@ -127,7 +127,7 @@ header:after {
 
 .container {
   width: 1240px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -194,9 +194,51 @@ ul {
   font-size: 55px;
 }
 
-.styles {
+.mens, .trends, .glasses, .sale, .bags, .womens {
+  height: 250px;
   display: inline-block;
+  background-size: cover;
+  line-height: 250px;
+  text-align: center;
   text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 1px 5px #242424; 
+}
+
+li a:hover {
+  color: #b64036;
+}
+
+.mens {
+  width: 45%;
+  background-image: url("../images/mens-category.jpg");
+}
+
+.trends {
+  width: 25%;
+  background-image: url("../images/trends-category.jpg");
+}
+
+.glasses {
+  width: 25%;
+  background-image: url("../images/glasses-category.jpg");
+}
+
+.sale {
+  width: 25%;
+  background-image: url("../images/sale-category.jpg");
+}
+
+.bags {
+  width: 25%;
+  background-image: url("../images/bags-category.jpg");
+}
+
+.womens {
+  width: 45%;
+  background-image: url("../images/womens-category.jpg");
 }
 
 .products {
