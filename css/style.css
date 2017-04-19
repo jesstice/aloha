@@ -98,13 +98,17 @@ html {
   font-size: 14px;
 }
 
-.container {
-  width: 480px;
+body {
   margin: 0;
-  padding: 0;
 }
 
-header {
+.container {
+  width: 100%;
+  /*margin: 0;
+  padding: 0;*/
+}
+
+header.container {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
@@ -114,7 +118,7 @@ header {
 .logo {
   width: 25%;
   height: 60px;
-  order: 1;
+  /*order: -1;*/
   /*flex-grow: 1;*/
 }
 
@@ -128,25 +132,27 @@ header {
 header ul {
   width: 80%;
   height: auto;
-  order: 3;
+
+  display: flex;
   flex-basis: 80%;
   flex-grow: 1;
-  display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  order: 10;
+
   border-top: 1px solid #d7d7d7;
-  text-transform: uppercase;
   color: #e2574c;
+  text-transform: uppercase;
 }
 
 header li {
   height: 50px;
   padding: 0;
   flex-grow: 1;
-  line-height: 50px;
+
   font-size: 1.25rem;
   font-weight: bold;
+  line-height: 50px;
 }
-
 
 h1, h2, h3 {
   font-family: 'playfair_display';
@@ -155,9 +161,9 @@ h1, h2, h3 {
 }
 
 h2 {
-  text-align: center;
   font-size: 3rem;
   font-style: italic;
+  text-align: center;
 }
 
 strong {
@@ -166,21 +172,26 @@ strong {
 } 
 
 p {
-  text-align: center;
-  font-family: 'ralewaylight';
+  color: #2d2d2d;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  color: #2d2d2d;
+  text-align: center;
+  font-family: 'ralewaylight';
 }
 
 ul {
-  list-style-type: none;
   font-family: 'ralewaylight';
+  list-style-type: none;
 }
 
 li a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }
 
 li a:hover {
@@ -191,19 +202,20 @@ li a:hover {
   /*padding: 10%;*/
   /*height: 300px;*/
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
 .banner {
   height: 500px;
-  /*margin: 0 0 50px 0;*/
+
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
   background:
     linear-gradient( rgba(36, 36, 36, 0.3),
      rgba(36, 36, 36, 0.3)
@@ -218,20 +230,19 @@ li a:hover {
   text-shadow: 1px 1px 5px #242424; 
 }
 
-.banner p {
+section.banner p {
   width: 60%;
   margin: 0;
-  /*display: inline-block;  */
+
+  color: inherit;
   font-size: 1.5rem;
   font-family: 'ralewaymedium';
   text-transform: uppercase;
-  color: inherit;
 }
 
-.banner h1 {
+section.banner h1 {
   width: 80%;
   margin: 10px;
-  /*display: inline-block;*/
   font-size: 3rem;
 }
 
@@ -249,14 +260,13 @@ li a:hover {
   justify-content: space-between;
   
   background-size: cover;
+  color: white;
+  line-height: 250px;  
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 2em;
-  color: white;
   text-shadow: 1px 1px 5px #242424; 
-/* centers text */
-  line-height: 250px;  
 }
 
 .mens, .womens {
@@ -295,7 +305,7 @@ li a:hover {
   padding: 0 auto;
 }
 
-.products li {
+li.products {
   width: 280px;
   margin: 20px 0;
   padding: 0px 5px;
@@ -303,19 +313,19 @@ li a:hover {
   text-align: center;
 }
 
-.products img {
+ul.products img {
   width: 90%;
 }
 
-.products h3 {
+ul.products h3 {
   width: 100%;
   color: #e2574c;
   font-size: 1.4em;
 }
 
-.products p {
-  text-transform: uppercase;
+ul.products p {
   color: #969696;
+  text-transform: uppercase;
 }
 
 .updates {
@@ -330,12 +340,12 @@ li a:hover {
   text-align: center;
 }
 
-.updates h2 {
+section.updates h2 {
   margin: 45px 0 10px 0;
   text-shadow: 1px 1px 5px #242424; 
 }
 
-.updates p {
+section.updates p {
   color: white;
 }
 
@@ -379,30 +389,31 @@ footer {
   height: 300px;
   margin: 10px 0 0 0;
   display: flex;
-  flex-direction: column;
-  align-content: space-around;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #242424;
   color: white;
 }
 
-.companyinfo {
+div.companyinfo {
   width: 60%;
+  align-content: space-around;
 }
 
-.companyinfo p, .companyinfo a:link {
+div.companyinfo p, .companyinfo a:link {
   color: white;
   font-family: 'playfair_display';
-  text-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
+  text-align: center;
 }
 
-.companyinfo span {
+div.companyinfo span {
   color: #969696;
 }
 
-.social-media {
+ul.social-media {
   padding: 0;
   display: flex;
   justify-content: center;
@@ -410,11 +421,11 @@ footer {
   line-height: 30px;
 }
 
-.social-media li {
+ul.social-media li {
   margin: 5%;
 }
 
-.social-media li span {
+ul.social-media span {
   display: none;
 }
 
