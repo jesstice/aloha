@@ -427,39 +427,40 @@ footer {
   
   .container {
     width: 1240px;
+  }
+    
+  .banner {
+    background-size: auto, 20%, 70%;
+    background-position: center, 50% -50%, center;
+  }
 
-    .banner {
-      background-size: auto, 20%, 70%;
-      background-position: center, 50% -50%, center;
-    }
+  footer {
+    height: 400px;
+    margin: 10px 0 0 0;
+    display: flex;
+    background-color: #242424;
+    color: white;
+    text-align: center;
+  }
 
-    footer {
-      height: 400px;
-      margin: 10px 0 0 0;
-      display: flex;
-      background-color: #242424;
-      color: white;
-      text-align: center;
-    }
+  .companyinfo {
+    margin: 40px 0 0 40px;
+    padding: 0;
+  }
 
-    .companyinfo {
-      margin: 40px 0 0 40px;
-      padding: 0;
-    }
+  .companyinfo p, .companyinfo a:link {
+    color: white;
+    font-family: 'playfair_display';
+    text-align: left;
+  }
 
-    .companyinfo p, .companyinfo a:link {
-      color: white;
-      font-family: 'playfair_display';
-      text-align: left;
-    }
+  .companyinfo span {
+    color: #969696;
+  }
 
-    .companyinfo span {
-      color: #969696;
-    }
-
-    .social-media {
-      margin: 50px 40px;
-      line-height: 30px;
-    }
+  .social-media {
+    margin: 50px 40px;
+    line-height: 30px;
+  }
 
 }
