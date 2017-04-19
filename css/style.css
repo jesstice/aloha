@@ -94,42 +94,59 @@
     font-style: italic;
 }
 
-body {
-  width: 100%;
+html {
+  font-size: 14px;
+}
+
+.container {
+  width: 480px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 25%;
+  height: 60px;
+  order: 1;
+  /*flex-grow: 1;*/
+}
+
+.cart-icon {
+  width: 10%;
+  height: 60px;
+  order: 2;
+  /*flex-grow: 1;*/
 }
 
 header ul {
-  position: relative;
-  display: inline-block;
-  text-align: center;
+  width: 80%;
+  height: auto;
+  order: 3;
+  flex-basis: 80%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #d7d7d7;
   text-transform: uppercase;
   color: #e2574c;
 }
 
 header li {
-  display: inline;
-}
-
-.logo {
-  height: 60px;
-}
-
-.cart-icon {
-  height: 60px;
-  float: right;
-}
-
-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.container {
-  width: 1240px;
-  margin: 0;
+  height: 50px;
   padding: 0;
+  flex-grow: 1;
+  line-height: 50px;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
+
 
 h1, h2, h3 {
   font-family: 'playfair_display';
@@ -139,7 +156,7 @@ h1, h2, h3 {
 
 h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 3rem;
   font-style: italic;
 }
 
@@ -151,7 +168,8 @@ strong {
 p {
   text-align: center;
   font-family: 'ralewaylight';
-  font-size: 16px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   color: #2d2d2d;
 }
 
@@ -169,97 +187,119 @@ li a:hover {
   color: #b64036;
 }
 
+.heading {
+  /*padding: 10%;*/
+  /*height: 300px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .banner {
   height: 500px;
-  margin: 0 0 50px 0;
-  text-align: center;
-  background: 
+  /*margin: 0 0 50px 0;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
     linear-gradient( rgba(36, 36, 36, 0.3),
      rgba(36, 36, 36, 0.3)
     ), 
     url("../images/banner-girl.png"), 
     url("../images/flower-bkgd.jpg");
+  background-size: auto, 38%, cover;
+  background-position: center, 50% 150%, center;
   background-repeat: no-repeat, no-repeat, repeat;
-  background-position: center, 50% -50%, center;
-  background-size: auto, 20%, 70%;
   color: white;
+  text-align: center;
   text-shadow: 1px 1px 5px #242424; 
 }
 
 .banner p {
-  width: inherit;
-  margin: 200px 0px 10px 0px;
-  display: inline-block;  
-  font-size: 12px;
+  width: 60%;
+  margin: 0;
+  /*display: inline-block;  */
+  font-size: 1.5rem;
   font-family: 'ralewaymedium';
   text-transform: uppercase;
   color: inherit;
 }
 
 .banner h1 {
-  width: inherit;
-  margin: 10px 0px 200px 0px;
-  display: inline-block;
-  font-size: 55px;
+  width: 80%;
+  margin: 10px;
+  /*display: inline-block;*/
+  font-size: 3rem;
 }
 
 .styles {
-  margin: 50px 0 0 0;
+  /*height: 500px;*/
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .mens, .trends, .glasses, .sale, .bags, .womens {
-  height: 250px;
-  display: inline-block;
+  /* not required?
+  height: 250px;*/
+  /*margin: 5px;*/
+  /*flex-grow: 1;*/
+  justify-content: space-between;
+  
   background-size: cover;
-  line-height: 250px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 2em;
   color: white;
   text-shadow: 1px 1px 5px #242424; 
+/* centers text */
+  line-height: 250px;  
+}
+
+.mens, .womens {
+  width: 100%;
+}
+
+.trends, .glasses, .sale, .bags {
+  width: 50%;
 }
 
 .mens {
-  width: 45%;
   background-image: url("../images/mens-category.jpg");
 }
 
 .trends {
-  width: 25%;
   background-image: url("../images/trends-category.jpg");
 }
 
 .glasses {
-  width: 25%;
   background-image: url("../images/glasses-category.jpg");
 }
 
 .sale {
-  width: 25%;
   background-image: url("../images/sale-category.jpg");
 }
 
 .bags {
-  width: 25%;
   background-image: url("../images/bags-category.jpg");
 }
 
 .womens {
-  width: 45%;
   background-image: url("../images/womens-category.jpg");
 }
 
 .products {
-  padding: 0px auto;
+  padding: 0 auto;
 }
 
 .products li {
   width: 280px;
-  margin: 20px 0px;
+  margin: 20px 0;
   padding: 0px 5px;
   display: inline-block;
-/**  border: 1px solid black;**/
   text-align: center;
 }
 
@@ -268,7 +308,7 @@ li a:hover {
 }
 
 .products h3 {
-  widows: 100%;
+  width: 100%;
   color: #e2574c;
   font-size: 1.4em;
 }
@@ -279,19 +319,19 @@ li a:hover {
 }
 
 .updates {
-  height: 325px; 
-  margin: 10px 0px;
-  text-align: center;
+  height: 100%; 
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/wave-bkgd.jpg");
-  background-size: 110%;
-  background-position: center bottom;
+  background-size: 350%;
+  background-position: 50% 100%;
   color: white;
+  text-align: center;
 }
 
 .updates h2 {
-  margin: 45px 0px 10px 0px;
-  padding: 20px auto;
-  display: inline-block;
+  margin: 45px 0 10px 0;
   text-shadow: 1px 1px 5px #242424; 
 }
 
@@ -300,10 +340,12 @@ li a:hover {
 }
 
 form {
-  width: 450px;
+  width: 400px;
   height: 40px;
   margin: 40px auto;
   padding: 2px;
+  display: flex;
+  justify-content: space-between;
   border: 1px solid white;
   border-radius: 30px;
   background-color: white;
@@ -314,9 +356,9 @@ form input {
   height: 100%;
   width: 60%;
   margin-left: 20px;
-  float: left;
   border: 0px;
   color: #2d2d2d;
+  font-size: 1.2rem;
 }
 
 input::placeholder {
@@ -325,31 +367,35 @@ input::placeholder {
 
 form button {
   height: 100%;
-  width: 30%;
-  float: right;
+  width: 33%;
   border: 1px solid #e2574c;
   border-radius: 30px;
   background-color: #e2574c;
   color: white;
+  font-size: 1.2rem;
 }
 
 footer {
-  height: 250px;
-  margin: 10px 0px 0px 0px;
+  height: 300px;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
   background-color: #242424;
   color: white;
 }
 
 .companyinfo {
-  float: left;
-  margin: 40px 0px 0px 40px;
-  padding: 0px;
+  width: 60%;
 }
 
 .companyinfo p, .companyinfo a:link {
   color: white;
   font-family: 'playfair_display';
-  text-align: left;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .companyinfo span {
@@ -357,7 +403,63 @@ footer {
 }
 
 .social-media {
-  float: right;
-  margin: 50px 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
   line-height: 30px;
+}
+
+.social-media li {
+  margin: 5%;
+}
+
+.social-media li span {
+  display: none;
+}
+
+/** To be continued! **/
+@media all and (min-width: 600px) {
+
+}
+
+@media all and (min-width: 1240px) {
+  
+  .container {
+    width: 1240px;
+
+    .banner {
+      background-size: auto, 20%, 70%;
+      background-position: center, 50% -50%, center;
+    }
+
+    footer {
+      height: 400px;
+      margin: 10px 0 0 0;
+      display: flex;
+      background-color: #242424;
+      color: white;
+      text-align: center;
+    }
+
+    .companyinfo {
+      margin: 40px 0 0 40px;
+      padding: 0;
+    }
+
+    .companyinfo p, .companyinfo a:link {
+      color: white;
+      font-family: 'playfair_display';
+      text-align: left;
+    }
+
+    .companyinfo span {
+      color: #969696;
+    }
+
+    .social-media {
+      margin: 50px 40px;
+      line-height: 30px;
+    }
+
 }
