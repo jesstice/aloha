@@ -176,7 +176,7 @@ nav li {
   line-height: 1.25rem;
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-family: 'playfair_display';
   font-weight: normal;
 
@@ -230,7 +230,7 @@ li a:hover {
 }
 
 .banner {
-  height: 500px;
+  height: 35.714285714rem;
 
   display: flex;
   align-items: center;
@@ -262,7 +262,7 @@ section.banner p {
   text-transform: uppercase;
 }
 
-section.banner h1 {
+section.banner h2 {
   width: 80%;
   margin: 10px;
   font-size: 3rem;
@@ -322,25 +322,25 @@ section.banner h1 {
   padding: 0 auto;
 }
 
-li.products {
-  width: 280px;
+li.main-carousel {
+  /*width: 280px;
   margin: 20px 0;
   padding: 0px 5px;
-  display: inline-block;
+  display: inline-block;*/
   text-align: center;
 }
 
-ul.products img {
+ul.main-carousel img {
   width: 90%;
 }
 
-ul.products h3 {
+ul.main-carousel h3 {
   width: 100%;
   color: #e2574c;
   font-size: 1.4em;
 }
 
-ul.products p {
+ul.main-carousel p {
   color: #969696;
   text-transform: uppercase;
 }
