@@ -277,13 +277,13 @@ li a:hover {
 
 .styles {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
 }
 
 .mens, .trends, .glasses, .sale, .bags, .womens {
-  justify-content: space-between;
-  
+  background-position: center;
   background-size: cover;
   color: white;
   line-height: 250px;  
@@ -296,13 +296,17 @@ li a:hover {
 
 .mens, .womens {
   width: 100%;
+  /*flex: 1 0 100%;*/
 }
 
 .trends, .glasses, .sale, .bags {
-  width: 50%;
+  width: calc(50% - 0.25rem);
+  margin-bottom: 0.5rem;
+  /*flex: 0 1 50%;*/
 }
 
 .mens {
+  margin-bottom: 0.5rem;
   background-image: url("../images/mens-category.jpg");
 }
 
@@ -330,26 +334,36 @@ li a:hover {
   padding: 0 auto;
 }
 
-li.main-carousel {
-  /*width: 280px;
-  margin: 20px 0;
-  padding: 0px 5px;
-  display: inline-block;*/
-  text-align: center;
+.main-carousel {
+  padding: 0;
 }
 
-ul.main-carousel img {
+.flickity-prev-next-button {
+  display: none;
+}
+
+.flickity-page-dots {
+  bottom: 0;
+}
+
+.carousel-cell {
+  text-align: center;
+  width: 60%;
+}
+
+.carousel-cell img {
   width: 90%;
 }
 
-ul.main-carousel h3 {
+.carousel-cell h3 {
   width: 100%;
   color: #e2574c;
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
-ul.main-carousel p {
+.carousel-cell p {
   color: #969696;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
