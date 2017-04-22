@@ -98,9 +98,8 @@ html {
   font-size: 14px;
 }
 
-/* Check if necessary */
-body {
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
 .container {
@@ -256,21 +255,27 @@ li a:hover {
   text-shadow: 1px 1px 5px #242424; 
 }
 
-section.banner p {
+.banner p {
   width: 60%;
   margin: 0;
-
+  align-content: flex-end;
+  /*flex-direction: flex-start;*/
+  flex-grow: 1;
   color: inherit;
-  font-size: 1.5rem;
   font-family: 'raleway';
+  font-size: 1.5rem;
+  font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-section.banner h2 {
+.banner h2 {
   width: 80%;
   margin: 10px;
+  flex-grow: 1;
+  color: white;
   font-size: 3rem;
+  font-style: normal;
 }
 
 .styles {
