@@ -184,7 +184,6 @@ nav li {
 h2, h3 {
   font-family: 'playfair_display';
   font-weight: normal;
-
 }
 
 h2 {
@@ -367,7 +366,7 @@ li a:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #e2574c;
-  font-size: 1.4rem;
+  font-size: 1.75rem;
 }
 
 .carousel-cell p {
@@ -379,10 +378,13 @@ li a:hover {
 }
 
 .updates {
-  height: 100%; 
-  margin: 10px 0;
+  height: 28.571428571rem;
+  /*height: 100%; */
+  margin: 1rem 0;
   display: flex;
+  align-items: center;
   flex-direction: column;
+  justify-content: space-around;
   background-image: url("../images/wave-bkgd.jpg");
   background-size: 350%;
   background-position: 50% 100%;
@@ -390,54 +392,61 @@ li a:hover {
   text-align: center;
 }
 
-section.updates h2 {
-  margin: 45px 0 10px 0;
+.updates h2 {
+  /*margin: 3.2142857143rem 0 0.7142857143rem 0;*/
   text-shadow: 1px 1px 5px #242424;
 }
 
-section.updates p {
+.updates p {
+  margin: 0;
+  padding: 0.75rem;
   color: white;
 }
 
-form {
-  width: 400px;
-  height: 40px;
-  margin: 40px auto;
-  padding: 2px;
+.subscribe {
+  width: 90%;
+  height: 2.8571428571rem;
+  /*margin: 2.8571428571rem auto;*/
+  /*padding: 0.1428571429rem;*/
   display: flex;
   justify-content: space-between;
   border: 1px solid white;
-  border-radius: 30px;
+  border-radius: 2.1428571429rem;
   background-color: white;
   text-align: center;
 }
 
-form input {
+.subscribe input {
   height: 100%;
   width: 60%;
-  margin-left: 20px;
+  margin-left: 1.4285714286rem;
   border: 0px;
   color: #2d2d2d;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-input::placeholder {
+.subscribe input::placeholder {
   color: #d7d7d7;
+  font-weight: normal;
 }
 
-form button {
+.subscribe input:focus {
+  outline: none;
+}
+
+.subscribe button {
   height: 100%;
   width: 33%;
   border: 1px solid #e2574c;
-  border-radius: 30px;
+  border-radius: 2.1428571429rem;
   background-color: #e2574c;
   color: white;
   font-size: 1.2rem;
 }
 
 footer {
-  height: 300px;
-  margin: 10px 0 0 0;
+  height: 21.428571429rem;
+  /*margin: 0.5rem 0 0 0;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -446,12 +455,12 @@ footer {
   color: white;
 }
 
-div.companyinfo {
+.companyinfo {
   width: 60%;
   align-content: space-around;
 }
 
-div.companyinfo p, .companyinfo a:link {
+.companyinfo p, .companyinfo a:link {
   color: white;
   font-family: 'playfair_display';
   font-size: 1rem;
@@ -459,11 +468,11 @@ div.companyinfo p, .companyinfo a:link {
   text-align: center;
 }
 
-div.companyinfo span {
+.companyinfo span {
   color: #969696;
 }
 
-ul.social-media {
+.social-media {
   padding: 0;
   display: flex;
   justify-content: center;
@@ -471,7 +480,7 @@ ul.social-media {
   line-height: 30px;
 }
 
-ul.social-media li {
+.social-media li {
   margin: 5%;
 }
 
