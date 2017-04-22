@@ -336,6 +336,8 @@ li a:hover {
 
 .main-carousel {
   padding: 0;
+  /*display: flex;*/
+  /*justify-content: space-around;*/
 }
 
 .flickity-prev-next-button {
@@ -344,26 +346,35 @@ li a:hover {
 
 .flickity-page-dots {
   bottom: 0;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  position: static;
 }
 
 .carousel-cell {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
-  width: 60%;
 }
 
 .carousel-cell img {
-  width: 90%;
+  width: 80%;
 }
 
 .carousel-cell h3 {
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #e2574c;
   font-size: 1.4rem;
 }
 
 .carousel-cell p {
+  margin: 0;
   color: #969696;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -381,7 +392,7 @@ li a:hover {
 
 section.updates h2 {
   margin: 45px 0 10px 0;
-  text-shadow: 1px 1px 5px #242424; 
+  text-shadow: 1px 1px 5px #242424;
 }
 
 section.updates p {
