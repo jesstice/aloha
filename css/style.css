@@ -381,7 +381,7 @@ li a:hover {
 .updates {
   height: 28.571428571rem;
   /*height: 100%; */
-  margin: 1rem 0;
+  margin: 0.75rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -412,7 +412,7 @@ li a:hover {
 }
 
 .subscribe {
-  width: 90%;
+  width: 85%;
   height: 3.2rem;
   /*margin: 2.8571428571rem auto;*/
   padding: 0.1428571429rem;
@@ -455,7 +455,7 @@ li a:hover {
 
 footer {
   height: 21.428571429rem;
-  /*margin: 0.5rem 0 0 0;*/
+  margin: 0.5rem 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -465,14 +465,14 @@ footer {
 }
 
 .companyinfo {
-  width: 60%;
+  width: 70%;
   align-content: space-around;
 }
 
 .companyinfo p, .companyinfo a:link {
   color: white;
   font-family: 'playfair_display';
-  font-size: 1rem;
+  font-size: 1.2142857143rem;
   line-height: 1.5rem;
   text-align: center;
 }
@@ -482,6 +482,7 @@ footer {
 }
 
 .social-media {
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -499,6 +500,8 @@ ul.social-media span {
 
 /** To be continued! **/
 @media all and (min-width: 600px) {
+
+
 
 }
 
