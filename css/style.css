@@ -293,7 +293,7 @@ li a:hover {
   background-position: center;
   background-size: cover;
   color: white;
-  line-height: 250px;  
+  line-height: 17.857142857rem;  
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
@@ -507,34 +507,115 @@ ul.social-media span {
 /** To be continued! **/
 @media all and (min-width: 600px) {
 
-header.container {
-  flex-wrap: nowrap;
-}
+  html {
+    font-size: 14px;
+  }
 
-.logo {
-  margin-bottom: 1rem;
-  flex-basis: 20%;
-}
+  header.container {
+    flex-wrap: nowrap;
+  }
 
-.cart-icon {
-  margin-bottom: 1rem; 
-  flex-basis: 20%;
-  order: 3;
-}
+  .logo {
+    margin-bottom: 1rem;
+    flex-basis: 20%;
+  }
 
-.cart-icon img {
-  /*width: 50%;*/
-}
+  .cart-icon {
+    margin-bottom: 1rem; 
+    flex-basis: 20%;
+    order: 3;
+  }
 
-nav {
-  width: 60%;
-  order: 2;
-}
+  nav {
+    width: 60%;
+    order: 2;
+  }
 
-nav ul {
-  align-items: center;
-  border-top: none;
-}
+  nav ul {
+    align-items: center;
+    border-top: none;
+  }
+
+  .banner {
+    background-size: auto, 30%, 120%;
+    background-position: center, 50% 275%, center;
+  }
+
+  .mens, .trends, .glasses, .sale, .bags, .womens {
+    line-height: 12.5rem;
+  }
+
+  .mens, .womens {
+    width: calc(50% - 0.25rem);
+    /*flex: 1 0 100%;*/
+  }
+
+  .trends, .glasses, .sale, .bags {
+    width: calc(25% - 0.25rem);
+    /*flex: 0 1 50%;*/
+  }
+
+  .sale {
+    margin-bottom: 0;
+  }
+
+  .bags {
+    margin-bottom: 0;
+  }
+
+  .products {
+    padding: 0 auto;
+  }
+
+  .carousel-cell {
+    width: 50%;
+  }
+
+/* Need to figure out bkg sizing */
+  .updates {
+    background-size: 200%;
+    background-position: 50% 100%;
+  }
+
+  footer {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .companyinfo {
+    width: 70%;
+    align-content: space-around;
+  }
+
+  .companyinfo p, .companyinfo a:link {
+    color: white;
+    font-family: 'playfair_display';
+    font-size: 1.2142857143rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .companyinfo span {
+    color: #969696;
+  }
+
+  .social-media {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+
+  .social-media li {
+    margin: 5%;
+  }
+
+  ul.social-media span {
+    display: none;
+  }
 
 @media all and (min-width: 1240px) {
   
