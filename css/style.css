@@ -512,31 +512,13 @@ header.container {
 }
 
 .logo {
-  /*height: 4.2857142857rem; 
-  margin-top: 1rem;
-  margin-left: 1rem;
-  display: flex;*/
   margin-bottom: 1rem;
   flex-basis: 20%;
-  /*justify-content: flex-start;*/
-}
-
-.logo h1 {
-  /*display: none;*/
-}
-
-.logo img {
-  /*width: 100%;*/
 }
 
 .cart-icon {
-  /*height: 4.2857142857rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  display: flex;*/
   margin-bottom: 1rem; 
   flex-basis: 20%;
-  /*justify-content: flex-end;*/
   order: 3;
 }
 
@@ -546,32 +528,12 @@ header.container {
 
 nav {
   width: 60%;
-  /*padding-left: 1.14rem;
-  padding-right: 1.14rem;*/
   order: 2;
-  /*display: flex;
-  flex-grow: 1;
-  justify-content: space-around;  */
 }
 
 nav ul {
-  /*padding: 0;
-  padding-top: 0.75rem;
-  display: flex;
-  flex-basis: 90%;
-  flex-grow: 1;*/
   align-items: center;
   border-top: none;
-}
-
-nav li {
-  /*padding: 0;
-  flex-grow: 1;
-
-  font-size: 1.25rem;
-  font-weight: bold;*/
-}
-
 }
 
 @media all and (min-width: 1240px) {
