@@ -226,12 +226,22 @@ li a:hover {
   color: #b64036;
 }
 
-.heading {
+.styles {
+  height: 21.428571429rem;  
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
+}
+
+.styles h2, .styles p {
+  margin: 0;
+}
+
+.styles::before, .styles::after {
+    content:'';display:block;
+    width:0;height:0;
+    overflow:hidden;
 }
 
 .banner {
@@ -275,7 +285,8 @@ li a:hover {
   font-style: normal;
 }
 
-.styles {
+.categories {
+  margin: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
