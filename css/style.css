@@ -385,6 +385,10 @@ li a:hover {
   text-transform: uppercase;
 }
 
+.carousel-cell p:last-child {
+  font-size: 1.1rem;
+}
+
 .signup {
   height: 28.571428571rem;
   margin: 0.75rem 0;
