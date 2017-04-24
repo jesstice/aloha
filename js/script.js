@@ -42,7 +42,8 @@ $(function() {
 	$('.main-carousel').flickity({
   // options
   	cellAlign: 'left',
-  	contain: true
+  	contain: true,
+		wrapAround: true,
 	});
 
   // FORM SUBMIT FUN
