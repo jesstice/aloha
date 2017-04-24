@@ -256,7 +256,7 @@ li a:hover {
 
 .banner h2 {
   width: 80%;
-  margin: 10px;
+  margin: 0.7142857143rem;
   color: white;
   font-size: 3rem;
   font-style: normal;
@@ -577,7 +577,7 @@ li a:hover {
   }
 
   .mens, .trends, .glasses, .sale, .bags, .womens {
-    line-height: 17.857142857rem;  
+    line-height: 11.5rem;  
   }
 
   .mens, .womens {
@@ -688,12 +688,22 @@ li a:hover {
       url("../images/flower-bkgd.jpg") center / contain repeat-x;
   }
 
+  .banner p {
+    width: 60%;
+    font-size: 1.25rem;
+  }
+
+  .styles {
+    height: 15rem;
+  }
+
   .styles p {
     width: 60%;
+    font-size: 1.1rem;
   }
 
   .mens, .trends, .glasses, .sale, .bags, .womens {
-    line-height: 17rem;
+    line-height: 17.857142857rem;  
   }
 
   .carousel-cell {
