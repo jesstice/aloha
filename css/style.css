@@ -94,16 +94,16 @@
     font-style: italic;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 14px;
 }
 
 .container {
- /* check if max-width necessary */
-  /*max-width: 1240px;*/
   width: 100%;
-  /*padding-left: 2rem;
-  padding-right: 2rem;  */
 }
 
 header.container {
@@ -311,16 +311,18 @@ li a:hover {
 .mens, .womens {
   width: 100%;
   /*flex: 1 0 100%;*/
+  border: 0.25rem solid white;
 }
 
 .trends, .glasses, .sale, .bags {
-  width: calc(50% - 0.25rem);
-  margin-bottom: 0.5rem;
+  width: 50%;
+  /*margin-bottom: 0.5rem;*/
+  border: 0.25rem solid white;
   /*flex: 0 1 50%;*/
 }
 
 .mens {
-  margin-bottom: 0.5rem;
+  /*margin-bottom: 0.5rem;*/
   background-image: url("../images/mens-category.jpg");
 }
 
@@ -427,7 +429,6 @@ li a:hover {
 .subscribe {
   width: 85%;
   height: 3.2rem;
-  /*margin: 2.8571428571rem auto;*/
   padding: 0.1428571429rem;
   display: flex;
   align-items: center;
@@ -555,12 +556,12 @@ li a:hover {
   }
 
   .mens, .womens {
-    width: calc(50% - 0.25rem);
+    width: 50%;
     /*flex: 1 0 100%;*/
   }
 
   .trends, .glasses, .sale, .bags {
-    width: calc(25% - 0.25rem);
+    width: 25%;
     /*flex: 0 1 50%;*/
   }
 
