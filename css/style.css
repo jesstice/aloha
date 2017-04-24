@@ -218,6 +218,13 @@ img {
   max-width: 100%;
 }
 
+#about, #shop, #featured, #updates {
+  outline-style: none;
+  box-shadow: none;
+  border: 0;
+  border-color: transparent;
+}
+
 li a:hover {
   color: #b64036;
 }
@@ -385,7 +392,7 @@ li a:hover {
   text-transform: uppercase;
 }
 
-.updates {
+.signup {
   height: 28.571428571rem;
   margin: 0.75rem 0;
   display: flex;
@@ -399,19 +406,19 @@ li a:hover {
   text-align: center;
 }
 
-.updates h2 {
+.signup h2 {
   margin: 0;
   text-shadow: 1px 1px 5px #242424;
 }
 
-.updates p {
+.signup p {
   margin: 0;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   color: white;
 }
 
-.updates::before, .updates::after {
+.signup::before, .signup::after {
     content:'';display:block;
     width:0;height:0;
     overflow:hidden;
@@ -425,9 +432,10 @@ li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
   border: 1px solid white;
   border-radius: 2.1428571429rem;
-  background-color: white;
+  box-shadow: 1px 1px 5px #242424;
   text-align: center;
 }
 
@@ -573,7 +581,7 @@ li a:hover {
   }
 
 /* Need to figure out bkg sizing */
-  .updates {
+  .signup {
     background-size: 200%;
     background-position: 50% 100%;
   }
@@ -595,14 +603,12 @@ li a:hover {
   }
 
   .companyinfo p, .companyinfo a:link {
-    /*font-size: 1rem;*/
     text-align: left;
   }
 
   .social-media {
     flex-basis: 25%;
     flex-direction: column;
-    /*font-size: 1rem;*/
   }
 
   .social-media li {
@@ -628,33 +634,6 @@ li a:hover {
     background-position: center, 50% -50%, center;
   }
 
-  footer {
-    height: 400px;
-    margin: 10px 0 0 0;
-    display: flex;
-    background-color: #242424;
-    color: white;
-    text-align: center;
+  .carousel-cell {
+    width: 25%;
   }
-
-  .companyinfo {
-    margin: 40px 0 0 40px;
-    padding: 0;
-  }
-
-  .companyinfo p, .companyinfo a:link {
-    color: white;
-    font-family: 'playfair_display';
-    text-align: left;
-  }
-
-  .companyinfo span {
-    color: #969696;
-  }
-
-  .social-media {
-    margin: 50px 40px;
-    line-height: 30px;
-  }
-
-}
