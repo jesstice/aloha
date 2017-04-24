@@ -399,7 +399,7 @@ li a:hover {
 }
 
 .signup h2 {
-  margin: 0;
+  margin: 1rem;
   text-shadow: 1px 1px 5px #242424;
 }
 
@@ -612,7 +612,12 @@ li a:hover {
   }
 
   .subscribe {
-    width: 70%;
+    /*width: 70%;*/
+    width: 27.5rem;
+  }
+
+  .subscribe button {
+    font-size: 1rem;
   }
 
   .contact-footer {
@@ -657,6 +662,10 @@ li a:hover {
     margin: 0 auto;
   }
 
+  h2 {
+    font-size: 2.3rem;
+  }
+
   .logo {
     margin-bottom: 1rem;
     flex-basis: 33.3333333%;
@@ -697,8 +706,8 @@ li a:hover {
     height: 15rem;
   }
 
-  .styles p {
-    width: 60%;
+  .styles p , .signup p {
+    width: 55%;
     font-size: 1.1rem;
   }
 
@@ -710,10 +719,24 @@ li a:hover {
     width: 25%;
   }
 
-  .signup p {
-    width: 60%;
+  .signup {
+    height: 21rem;
   }
 
   .subscribe {
     width: 40%;
+    font-size: 1rem;
+  }
+
+  .contact-footer {
+    height: 20rem;
+  }
+
+  .companyinfo p, .companyinfo a:link {
+    font-size: 1rem;
+  }
+
+  .social-media {
+    font-size: 1rem;
+    flex-basis: 20%;
   }
