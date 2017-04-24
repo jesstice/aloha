@@ -514,6 +514,10 @@ li a:hover {
   display: none;
 }
 
+/** MEDIA QUERIES SECTION!!!! **/
+/** MEDIA QUERIES SECTION!!!! **/
+/** MEDIA QUERIES SECTION!!!! **/
+/** MEDIA QUERIES SECTION!!!! **/
 /** To be continued! **/
 @media all and (min-width: 600px) {
 
@@ -627,7 +631,8 @@ li a:hover {
 @media all and (min-width: 1240px) {
   
   .container {
-    width: 1240px;
+    max-width: 1240px;
+    margin: 0 auto;
   }
     
   .banner {
