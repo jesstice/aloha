@@ -339,8 +339,8 @@ li a:hover {
   background-image: url("../images/womens-category.jpg");
 }
 
-.products {
-  padding: 0 auto;
+.products h2 {
+  margin: 3rem 2rem;
 }
 
 .main-carousel {
@@ -602,8 +602,8 @@ li a:hover {
     margin-bottom: 0;
   }
 
-  .products {
-    padding: 0 auto;
+  .products h2 {
+      margin: 3rem;
   }
 
   .carousel-cell {
