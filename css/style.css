@@ -460,7 +460,7 @@ li a:hover {
   font-size: 1.2rem;
 }
 
- .contact-footer {
+ .contact-details {
   height: 21.428571429rem;
   margin: 0.5rem 0 0 0;
   display: flex;
@@ -612,7 +612,6 @@ li a:hover {
   }
 
   .subscribe {
-    /*width: 70%;*/
     width: 27.5rem;
   }
 
@@ -620,7 +619,7 @@ li a:hover {
     font-size: 1rem;
   }
 
-  .contact-footer {
+  .contact-details {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
@@ -652,7 +651,6 @@ li a:hover {
   .social-media span {
     display: inline-block;
     position: absolute;
-    
   }
 
 @media all and (min-width: 1240px) {
@@ -719,16 +717,31 @@ li a:hover {
     width: 25%;
   }
 
+  .carousel-cell h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
   .signup {
     height: 21rem;
   }
 
   .subscribe {
+    height: 3rem;
     width: 40%;
     font-size: 1rem;
   }
 
-  .contact-footer {
+  .subscribe input {
+    width: 70%;
+  }
+
+  .subscribe button {
+    width: 27%;
+  }
+
+  .contact-details {
     height: 20rem;
   }
 
@@ -740,3 +753,6 @@ li a:hover {
     font-size: 1rem;
     flex-basis: 20%;
   }
+
+
+  
