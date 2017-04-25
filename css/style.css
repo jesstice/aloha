@@ -123,7 +123,7 @@ header .container {
 }
 
 .logo {
-  height: 4.2857142857rem; 
+  height: 4.2857142857rem;
   display: flex;
   flex-basis: 30%;
   justify-content: flex-start;
@@ -154,7 +154,7 @@ nav {
   padding-right: 1.14rem;
   display: flex;
   flex-grow: 1;
-  justify-content: space-around;  
+  justify-content: space-around;
   order: 3;
 }
 
@@ -202,7 +202,7 @@ p {
   text-align: center;
 }
 
-ul {
+nav ul, ul.categories, ul.main-carousel, ul.social-media {
   font-family: 'raleway';
   list-style-type: none;
 }
@@ -231,12 +231,12 @@ li a:hover {
 .banner {
   height: 34rem;
   background:
-    linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
-    url("../images/banner-girl.png") 50% 165% / 12.5rem no-repeat, 
+    linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)),
+    url("../images/banner-girl.png") 50% 165% / 12.5rem no-repeat,
     url("../images/flower-bkgd.jpg") center / cover no-repeat;
   color: white;
   text-align: center;
-  text-shadow: 1px 1px 5px #242424; 
+  text-shadow: 1px 1px 5px #242424;
 }
 
 .banner div {
@@ -267,7 +267,7 @@ li a:hover {
 }
 
 #about {
-  height: 21.428571429rem;  
+  height: 21.428571429rem;
 }
 
 .styles {
@@ -285,7 +285,7 @@ li a:hover {
 
 .styles::before, .styles::after {
   height: 0;
-  width: 0; 
+  width: 0;
   content: '';
   display: block;
   overflow: hidden;
@@ -310,7 +310,7 @@ li a:hover {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 800;
-  text-shadow: 1px 1px 5px #242424; 
+  text-shadow: 1px 1px 5px #242424;
 }
 
 .mens, .womens {
@@ -408,9 +408,9 @@ li a:hover {
 }
 
 #updates {
-  height: 28.571428571rem; 
+  height: 28.571428571rem;
   background:
-    linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
+    linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)),
     url("../images/wave-bkgd.jpg") 50% 100% / 120rem;
 }
 
@@ -436,7 +436,7 @@ li a:hover {
 
 .signup::before, .signup::after {
   height: 0;
-  width: 0; 
+  width: 0;
   content: '';
   display: block;
   overflow: hidden;
@@ -463,10 +463,6 @@ li a:hover {
   color: #2d2d2d;
   font-size: 1rem;
 }
-
-/*.subscribe input:focus {
-  box-shadow: 1px 1px 5px #242424;
-}*/
 
 .subscribe input::placeholder {
   color: #d7d7d7;
@@ -540,11 +536,6 @@ li a:hover {
   display: none;
 }
 
-/** MEDIA QUERIES SECTION!!!! **/
-/** MEDIA QUERIES SECTION!!!! **/
-/** MEDIA QUERIES SECTION!!!! **/
-/** MEDIA QUERIES SECTION!!!! **/
-/** To be continued! **/
 @media all and (min-width: 600px) {
 
   html {
@@ -589,8 +580,8 @@ li a:hover {
   .banner {
     height: 27rem;
     background:
-      linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
-      url("../images/banner-girl.png") 50% 168% / 10rem no-repeat, 
+      linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)),
+      url("../images/banner-girl.png") 50% 168% / 10rem no-repeat,
       url("../images/flower-bkgd.jpg") center / cover no-repeat;
   }
 
@@ -638,7 +629,7 @@ li a:hover {
   #updates {
     height: 26rem;
     background:
-      linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
+      linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)),
       url("../images/wave-bkgd.jpg") 50% 100% ;
   }
 
@@ -725,8 +716,8 @@ li a:hover {
   .banner {
     height: 34rem;
     background:
-      linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
-      url("../images/banner-girl.png") 50% -125% / 15rem no-repeat, 
+      linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)),
+      url("../images/banner-girl.png") 50% -125% / 15rem no-repeat,
       url("../images/flower-bkgd.jpg") center / contain repeat-x;
   }
 
@@ -795,5 +786,3 @@ li a:hover {
     font-size: 1rem;
     flex-basis: 15%;
   }
-
-  
