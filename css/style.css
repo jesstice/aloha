@@ -113,6 +113,8 @@ body {
 }
 
 header .container {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   position: relative;
   display: flex;
   align-content: space-between;
@@ -122,7 +124,6 @@ header .container {
 
 .logo {
   height: 4.2857142857rem; 
-  margin-top: 1rem;
   display: flex;
   flex-basis: 30%;
   justify-content: flex-start;
@@ -138,7 +139,6 @@ header .container {
 
 .cart-icon {
   height: 4.2857142857rem;
-  margin-top: 1rem;
   display: flex;
   flex-basis: 30%;
   justify-content: flex-end;
@@ -232,7 +232,6 @@ li a:hover {
 
 .banner {
   height: 34rem;
-
   background:
     linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
     url("../images/banner-girl.png") 50% 165% / 12.5rem no-repeat, 
@@ -380,6 +379,9 @@ li a:hover {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -482,7 +484,7 @@ li a:hover {
 }
 
  .contact-details {
-  height: 21.428571429rem;
+  height: 23rem;
   margin: 0.5rem 0 0 0;
   display: flex;
   align-items: center;
@@ -551,12 +553,10 @@ li a:hover {
   }
 
   .logo {
-    margin-bottom: 1rem;
     flex-basis: 20%;
   }
 
   .cart-icon {
-    margin-bottom: 1rem; 
     flex-basis: 20%;
     order: 3;
   }
@@ -576,47 +576,40 @@ li a:hover {
   }
 
   .banner {
-    height: 31rem;
+    height: 27rem;
     background:
       linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
-      url("../images/banner-girl.png") 50% 250% / 12rem no-repeat, 
+      url("../images/banner-girl.png") 50% 168% / 10rem no-repeat, 
       url("../images/flower-bkgd.jpg") center / cover no-repeat;
   }
 
   .banner p {
     width: 60%;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 
   .banner h2 {
-    width: 80%;
-    font-size: 3.25rem;
+    width: 100%;
+    font-size: 3.1rem;
   }
 
-  .styles p {
-    width: 80%;
+  #about {
+    height: 20rem;
   }
 
   .mens, .trends, .glasses, .sale, .bags, .womens {
-    line-height: 11.5rem;  
+    padding-bottom: 15%;
+    padding-top: 12%;
   }
 
   .mens, .womens {
     width: 50%;
-    /*flex: 1 0 100%;*/
+    flex: 0 0 50%;
   }
 
   .trends, .glasses, .sale, .bags {
     width: 25%;
-    /*flex: 0 1 50%;*/
-  }
-
-  .sale {
-    margin-bottom: 0;
-  }
-
-  .bags {
-    margin-bottom: 0;
+    flex: 0 0 25%;
   }
 
   .products h2 {
@@ -627,13 +620,19 @@ li a:hover {
     width: 50%;
   }
 
+  .carousel-cell h3 {
+    width: 80%;
+  }
+
   .signup {
-    height: 24rem;
-    background-position: 50% 100%;
+    height: 26rem;
+    background:
+      linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
+      url("../images/wave-bkgd.jpg") 50% 100% ;
   }
 
   .subscribe {
-    width: 27.5rem;
+    width: 25rem;
   }
 
   .subscribe button {
@@ -641,6 +640,7 @@ li a:hover {
   }
 
   .contact-details {
+    height: 19rem;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
@@ -648,17 +648,18 @@ li a:hover {
 
   .companyinfo {
     width: 50%;
-    padding-left: 2rem;
     align-content: space-around;
   }
 
   .companyinfo p, .companyinfo a:link {
+    font-size: 1.1rem;
     text-align: left;
   }
 
   .social-media {
     flex-basis: 25%;
     flex-direction: column;
+    font-size: 1.1rem;
   }
 
   .social-media li {
