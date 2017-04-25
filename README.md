@@ -22,5 +22,6 @@ It was built using responsive web design and optimized for 3 widths: mobile, min
 ## Lessons Learned
 This project allowed me to utilize HTML, CSS and JavaScript to develop a website and expand my knowledge in the following ways:
 
-- I learned how to build a responsive website, using a mobile-first approach and media queries.
-- I learned about the effectiveness of Flexbox.
+- The process of refactoring and reworking my code to build a responsive website helped me understand the different properties one has to consider when using a mobile-first approach.
+- One of my major challenges was understanding Flexbox and learning how the various properties work. There was a lot of trial and error involved, but it was helpful in allowing me to visualize how the different properties worked.
+- I found the developer tools extremely useful when searching for bugs and finding ways to solve my problem. It quickly became a good friend, guiding me to insights I had not considered before and allowing me to test new ideas before inserting them into my code.
