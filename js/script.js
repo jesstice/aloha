@@ -32,29 +32,28 @@ $(function() {
 						} else {
 							$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
 							$target.focus(); // Set focus again
-						};
-					});
-				}
-			}
+						};});}}
 		});
 
-  // FLICKITY SLIDER
 	$('.main-carousel').flickity({
-  // options
   	cellAlign: 'left',
   	contain: true,
 		wrapAround: true,
 	});
 
-  // FORM SUBMIT FUN
 	$('.subscribe').on('submit', function(event) {
   	event.preventDefault();
-    
     if ( $('#email-input').val() == '' ) {
       alert('Oops! You forgot to enter your email. Try again!');  
     } else {
-      alert('Thanks for subscribing! We promise not to spam you!');  
-    }; 
+      alert('Thanks for subscribing! We promise not to spam you!');}; 
   });
-  
+
+	$('#email-input').focus(function() {
+		$('.subscribe').css('box-shadow', '1px 1px 5px #242424');
+	});
+	$('#email-input').blur(function() {
+		$('.subscribe').css('box-shadow', 'none');
+	});
+
 });

@@ -152,10 +152,10 @@ nav {
   width: 90%;
   padding-left: 1.14rem;
   padding-right: 1.14rem;
-  order: 3;
   display: flex;
   flex-grow: 1;
   justify-content: space-around;  
+  order: 3;
 }
 
 nav ul {
@@ -164,7 +164,6 @@ nav ul {
   display: flex;
   flex-basis: 90%;
   flex-grow: 1;
-
   border-top: 1px solid #d7d7d7;
   color: #e2574c;
   text-align: center;
@@ -174,7 +173,6 @@ nav ul {
 nav li {
   padding: 0;
   flex-grow: 1;
-
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -191,17 +189,17 @@ h2 {
 }
 
 h2 span {
-  font-weight: bold;
   font-style: normal;
+  font-weight: bold;
 } 
 
 p {
   color: #2d2d2d;
   font-size: 1.3rem;
-  line-height: 2.5rem;
-  text-align: center;
   font-family: 'raleway';
   font-weight: normal;
+  line-height: 2.5rem;
+  text-align: center;
 }
 
 ul {
@@ -220,10 +218,10 @@ img {
 }
 
 #about, #shop, #featured, #updates {
-  outline-style: none;
-  box-shadow: none;
   border: 0;
   border-color: transparent;
+  box-shadow: none;
+  outline-style: none;
 }
 
 li a:hover {
@@ -286,16 +284,18 @@ li a:hover {
 }
 
 .styles::before, .styles::after {
-    content:'';display:block;
-    width:0;height:0;
-    overflow:hidden;
+  height: 0;
+  width: 0; 
+  content: '';
+  display: block;
+  overflow: hidden;
 }
 
 .categories {
   margin: 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
 }
 
@@ -303,15 +303,13 @@ li a:hover {
   height: 0;
   padding-bottom: 26%;
   padding-top: 24%;
-
   background-position: center;
   background-size: cover;
   color: white;
-  /*line-height: 17.857142857rem;  */
   text-align: center;
   text-transform: uppercase;
-  font-weight: 800;
   font-size: 2rem;
+  font-weight: 800;
   text-shadow: 1px 1px 5px #242424; 
 }
 
@@ -352,8 +350,8 @@ li a:hover {
 }
 
 .products {
-  margin-top: 4rem;
   margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .products h2 {
@@ -377,11 +375,11 @@ li a:hover {
 
 .carousel-cell {
   width: 100%;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -391,8 +389,8 @@ li a:hover {
 
 .carousel-cell h3 {
   width: 100%;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   color: #e2574c;
   font-size: 1.75rem;
 }
@@ -437,14 +435,16 @@ li a:hover {
 }
 
 .signup::before, .signup::after {
-    content:'';display:block;
-    width:0;height:0;
-    overflow:hidden;
+  height: 0;
+  width: 0; 
+  content: '';
+  display: block;
+  overflow: hidden;
 }
 
 .subscribe {
-  width: 85%;
   height: 3.2rem;
+  width: 85%;
   padding: 0.1428571429rem;
   display: flex;
   align-items: center;
@@ -452,7 +452,6 @@ li a:hover {
   background-color: white;
   border: 1px solid white;
   border-radius: 2.1428571429rem;
-  box-shadow: 1px 1px 5px #242424;
   text-align: center;
 }
 
@@ -464,6 +463,10 @@ li a:hover {
   color: #2d2d2d;
   font-size: 1rem;
 }
+
+/*.subscribe input:focus {
+  box-shadow: 1px 1px 5px #242424;
+}*/
 
 .subscribe input::placeholder {
   color: #d7d7d7;
@@ -792,6 +795,5 @@ li a:hover {
     font-size: 1rem;
     flex-basis: 15%;
   }
-
 
   
