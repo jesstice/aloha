@@ -7,17 +7,17 @@ It was built using responsive web design and optimized for 3 widths: mobile, min
 
 ## Technologies Used
 
-- Autoprefixer CSS online [https://autoprefixer.github.io/] (https://autoprefixer.github.io/)
-- Flickity [Link] (http://flickity.metafizzy.co/)
-- Font Awesome [Link] (http://fontawesome.io/)
-- Font Squirrel [www.fontsquirrel.com] (https://www.fontsquirrel.com/)
+- Autoprefixer CSS online (https://autoprefixer.github.io/)
+- Flickity (http://flickity.metafizzy.co/)
+- Font Awesome (http://fontawesome.io/)
+- Font Squirrel (https://www.fontsquirrel.com/)
 - GIT
 - Google Chrome
 - Google Chrome Developer Tools
-- JQuery [Link] (https://jquery.com/)
+- JQuery (https://jquery.com/)
 - Pesticide for Chrome (Chrome Extension)
-- W3C CSS Validation Service [Link] (https://jigsaw.w3.org/css-validator/)
-- W3C HTML Checker [Link] (https://validator.w3.org/nu/)
+- W3C CSS Validation Service (https://jigsaw.w3.org/css-validator/)
+- W3C HTML Checker (https://validator.w3.org/nu/)
 
 ## Lessons Learned
 This project allowed me to utilize HTML, CSS and JavaScript to develop a website and expand my knowledge in the following ways:
