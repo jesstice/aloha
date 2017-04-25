@@ -116,17 +116,24 @@ header .container {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
   position: relative;
+  display: -ms-flexbox;
   display: flex;
-  align-content: space-between;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .logo {
   height: 4.2857142857rem;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 30%;
-  justify-content: flex-start;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 
 .logo h1 {
@@ -139,9 +146,12 @@ header .container {
 
 .cart-icon {
   height: 4.2857142857rem;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 30%;
-  justify-content: flex-end;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .cart-icon img {
@@ -152,18 +162,25 @@ nav {
   width: 90%;
   padding-left: 1.14rem;
   padding-right: 1.14rem;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
-  order: 3;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-order: 3;
+      order: 3;
 }
 
 nav ul {
   padding: 0;
   padding-top: 0.75rem;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 90%;
-  flex-grow: 1;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
   border-top: 1px solid #d7d7d7;
   color: #e2574c;
   text-align: center;
@@ -172,7 +189,8 @@ nav ul {
 
 nav li {
   padding: 0;
-  flex-grow: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -241,10 +259,14 @@ li a:hover {
 
 .banner div {
   height: 100%;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .banner p {
@@ -272,10 +294,14 @@ li a:hover {
 
 .styles {
   height: 100%;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
 }
 
@@ -293,9 +319,12 @@ li a:hover {
 
 .categories {
   margin: 0;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   padding: 0;
 }
 
@@ -315,13 +344,15 @@ li a:hover {
 
 .mens, .womens {
   width: 100%;
-  flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
   border: 0.25rem solid white;
 }
 
 .trends, .glasses, .sale, .bags {
   width: 50%;
-  flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
   border: 0.25rem solid white;
 }
 
@@ -377,9 +408,12 @@ li a:hover {
   width: 100%;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   text-align: center;
 }
 
@@ -416,10 +450,14 @@ li a:hover {
 
 .signup {
   height: 100%;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: white;
   text-align: center;
 }
@@ -446,9 +484,12 @@ li a:hover {
   height: 3.2rem;
   width: 85%;
   padding: 0.1428571429rem;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   background-color: white;
   border: 1px solid white;
   border-radius: 2.1428571429rem;
@@ -462,6 +503,21 @@ li a:hover {
   border: 0;
   color: #2d2d2d;
   font-size: 1rem;
+}
+
+.subscribe input::-webkit-input-placeholder {
+  color: #d7d7d7;
+  font-weight: normal;
+}
+
+.subscribe input::-moz-placeholder {
+  color: #d7d7d7;
+  font-weight: normal;
+}
+
+.subscribe input:-ms-input-placeholder {
+  color: #d7d7d7;
+  font-weight: normal;
 }
 
 .subscribe input::placeholder {
@@ -494,16 +550,21 @@ li a:hover {
 
 .contact-details .container {
   height: 100%;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   color: white;
 }
 
 .companyinfo {
   width: 70%;
-  align-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 .companyinfo p, .companyinfo a:link {
@@ -521,8 +582,10 @@ li a:hover {
 .social-media {
   margin: 0;
   padding: 0;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   font-size: 1.2rem;
   line-height: 2.1428571429rem;
 }
@@ -551,16 +614,20 @@ li a:hover {
   }
 
   header .container {
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 
   .logo {
-    flex-basis: 20%;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
   }
 
   .cart-icon {
-    flex-basis: 20%;
-    order: 3;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    -ms-flex-order: 3;
+        order: 3;
   }
 
   nav {
@@ -606,12 +673,14 @@ li a:hover {
 
   .mens, .womens {
     width: 50%;
-    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
   }
 
   .trends, .glasses, .sale, .bags {
     width: 25%;
-    flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
   }
 
   .products h2 {
@@ -646,14 +715,18 @@ li a:hover {
   }
 
   .contact-details .container {
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row;
   }
 
   .companyinfo {
     width: 50%;
-    align-content: space-around;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
   }
 
   .companyinfo p, .companyinfo a:link {
@@ -662,8 +735,10 @@ li a:hover {
   }
 
   .social-media {
-    flex-basis: 25%;
-    flex-direction: column;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    -ms-flex-direction: column;
+        flex-direction: column;
     font-size: 1.1rem;
   }
 
@@ -692,7 +767,8 @@ li a:hover {
   }
 
   .logo {
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
 
   .logo img {
@@ -700,8 +776,10 @@ li a:hover {
   }
 
   .cart-icon {
-    flex-basis: 30%;
-    order: 3;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -ms-flex-order: 3;
+        order: 3;
   }
 
   .cart-icon img {
@@ -710,7 +788,8 @@ li a:hover {
 
   nav {
     width: 40%;
-    order: 2;
+    -ms-flex-order: 2;
+        order: 2;
   }
 
   .banner {
@@ -784,5 +863,6 @@ li a:hover {
 
   .social-media {
     font-size: 1rem;
-    flex-basis: 15%;
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
   }
