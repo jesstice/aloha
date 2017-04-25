@@ -409,15 +409,19 @@ li a:hover {
   font-size: 1.1rem;
 }
 
+#updates {
+  height: 28.571428571rem; 
+  background:
+    linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
+    url("../images/wave-bkgd.jpg") 50% 100% / 120rem;
+}
+
 .signup {
-  height: 28.571428571rem;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  background:
-    linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
-    url("../images/wave-bkgd.jpg") 50% 100% / 120rem;
   color: white;
   text-align: center;
 }
@@ -484,13 +488,17 @@ li a:hover {
 }
 
  .contact-details {
-  height: 23rem;
+  height: 25rem;
   margin: 0.5rem 0 0 0;
+  background-color: #242424;
+}
+
+.contact-details .container {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #242424;
   color: white;
 }
 
@@ -624,7 +632,7 @@ li a:hover {
     width: 80%;
   }
 
-  .signup {
+  #updates {
     height: 26rem;
     background:
       linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
@@ -641,6 +649,9 @@ li a:hover {
 
   .contact-details {
     height: 19rem;
+  }
+
+  .contact-details .container {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
@@ -687,7 +698,6 @@ li a:hover {
   }
 
   .logo {
-    margin-bottom: 1rem;
     flex-basis: 30%;
   }
 
@@ -696,7 +706,6 @@ li a:hover {
   }
 
   .cart-icon {
-    margin-bottom: 1rem; 
     flex-basis: 30%;
     order: 3;
   }
@@ -711,9 +720,10 @@ li a:hover {
   }
 
   .banner {
+    height: 34rem;
     background:
       linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
-      url("../images/banner-girl.png") 50% -40% / 15rem no-repeat, 
+      url("../images/banner-girl.png") 50% -125% / 15rem no-repeat, 
       url("../images/flower-bkgd.jpg") center / contain repeat-x;
   }
 
@@ -726,7 +736,7 @@ li a:hover {
     font-size: 3.75rem;
   }
 
-  .styles {
+  #about {
     height: 15rem;
   }
 
@@ -736,7 +746,9 @@ li a:hover {
   }
 
   .mens, .trends, .glasses, .sale, .bags, .womens {
-    line-height: 17.857142857rem;  
+    margin: 0;
+    padding-bottom: 13%;
+    padding-top: 11.5%;
   }
 
   .carousel-cell {
@@ -744,13 +756,14 @@ li a:hover {
   }
 
   .carousel-cell h3 {
+    width: 85%;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
   }
 
-  .signup {
-    height: 21rem;
+  #updates {
+    height: 22rem;
   }
 
   .subscribe {
@@ -768,7 +781,7 @@ li a:hover {
   }
 
   .contact-details {
-    height: 20rem;
+    height: 18rem;
   }
 
   .companyinfo p, .companyinfo a:link {
@@ -777,7 +790,7 @@ li a:hover {
 
   .social-media {
     font-size: 1rem;
-    flex-basis: 20%;
+    flex-basis: 15%;
   }
 
 
