@@ -520,7 +520,7 @@ li a:hover {
   font-weight: normal;
 }
 
-.subscribe input::placeholder {
+.subscribe input:placeholder {
   color: #d7d7d7;
   font-weight: normal;
 }
@@ -754,6 +754,7 @@ li a:hover {
     display: inline-block;
     position: absolute;
   }
+}  
 
 @media all and (min-width: 1240px) {
 
@@ -866,3 +867,4 @@ li a:hover {
     -ms-flex-preferred-size: 15%;
         flex-basis: 15%;
   }
+}
