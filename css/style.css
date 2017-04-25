@@ -409,24 +409,23 @@ li a:hover {
 
 .signup {
   height: 28.571428571rem;
-  margin: 0.75rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  background-image: url("../images/wave-bkgd.jpg");
-  background-position: 50% 100%;
+  background:
+    linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), 
+    url("../images/wave-bkgd.jpg") 50% 100% / 120rem;
   color: white;
   text-align: center;
 }
 
 .signup h2 {
-  /*margin: 1rem;*/
+  margin: 0;
   text-shadow: 1px 1px 5px #242424;
 }
 
 .signup p {
-  width: 90%;
   margin: 0;
   color: white;
 }
