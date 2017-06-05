@@ -117,6 +117,7 @@ header {
   left: 0;
   right: 0;
   position: fixed;
+  background: white;
   z-index: 999;
 }
 
