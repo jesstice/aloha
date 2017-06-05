@@ -205,7 +205,7 @@ nav li {
 }
 
 h2, h3 {
-  font-family: 'playfair_display';
+  font-family: 'playfair_display', 'Times New Roman', serif;
   font-weight: normal;
 }
 
@@ -223,14 +223,14 @@ h2 span {
 p {
   color: #2d2d2d;
   font-size: 1.3rem;
-  font-family: 'raleway';
+  font-family: 'raleway', 'Helvetica', sans-serif;
   font-weight: normal;
   line-height: 2.5rem;
   text-align: center;
 }
 
 nav ul, ul.categories, ul.main-carousel, ul.social-media {
-  font-family: 'raleway';
+  font-family: 'raleway', 'Times New Roman', serif;
   list-style-type: none;
 }
 
@@ -304,7 +304,7 @@ li a:hover {
   width: 60%;
   margin: 0;
   color: inherit;
-  font-family: 'raleway';
+  font-family: 'raleway', 'Helvetica', sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: bold;
@@ -606,7 +606,7 @@ li a:hover {
 
 .companyinfo p, .companyinfo a:link {
   color: white;
-  font-family: 'playfair_display';
+  font-family: 'playfair_display', 'Times New Roman', serif;
   font-size: 1.2142857143rem;
   line-height: 1.5rem;
   text-align: center;
