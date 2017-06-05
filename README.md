@@ -1,5 +1,7 @@
 # Project 1: Aloha Apparel Co.
 
+![Aloha Screenshot](../images/aloha-screenshot.png)
+
 ## Description
 This sample one-page website was coded from scratch using a provided design outline.
 

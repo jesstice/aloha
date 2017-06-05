@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-  <html>
+  <html lang="en">
     <head>
       <meta charset="utf-8">
       <title>Aloha Project</title>
@@ -16,6 +16,7 @@
           <div class="logo">
             <h1>Aloha Apparel Co.</h1><img src="images/aloha-logo.svg" alt="aloha logo">
           </div>
+          <a class="screen-reader-text" href="#about">Skip to content</a>
           <nav>
             <ul>
               <li><a href="#about">About</a></li>
@@ -37,30 +38,31 @@
         </div>
       </section>
 
-      <div id="about">
+      <section id="about" tabindex="-1">
         <div class="styles container">
           <h2>Hand-Crafted <span class="emphasis">Styles</span></h2>
           <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
         </div>
-      </div>
+      </section>
 
-      <ul class="categories" id="shop">
-        <li class="mens"><a href="#">Men's</a></li>
-        <li class="trends"><a href="#">Trends</a></li>
-        <li class="glasses"><a href="#">Glasses</a></li>
-        <li class="sale"> <a href="#">Sale</a></li>
-        <li class="bags"> <a href="#">Bags</a></li>
-        <li class="womens"> <a href="#">Women's</a></li>
-      </ul> 
+      <section>
+        <ul class="categories" id="shop">
+          <li class="mens"><a href="#">Men's</a></li>
+          <li class="trends"><a href="#">Trends</a></li>
+          <li class="glasses"><a href="#">Glasses</a></li>
+          <li class="sale"> <a href="#">Sale</a></li>
+          <li class="bags"> <a href="#">Bags</a></li>
+          <li class="womens"> <a href="#">Women's</a></li>
+        </ul>
+      </section>
+       
       
-      <div class="products" id="featured">
-        <div class="container">
+      <section id="featured">
+        <div class="container products">
           <h2>Most-Loved <span class="emphasis">Products</span></h2>
         </div>
-      </div>
 
-      <div class="container">  
-        <ul class="main-carousel">
+        <ul class="main-carousel container">
           <li class="carousel-cell">
             <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
             <p>Dresses</p>
@@ -91,13 +93,13 @@
             <h3>Blue Silk Dress</h3>
             <p>$89.00</p>
           </li>
-         <li class="carousel-cell">
+        <li class="carousel-cell">
             <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt">
             <p>Denim</p>
             <h3>Jean Shirt</h3>
             <p>$49.00</p>
           </li>
-         <li class="carousel-cell">
+        <li class="carousel-cell">
             <img src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow shirts">
             <p>Shirts</p>
             <h3>Cotton Yellow Shirt</h3>
@@ -110,7 +112,7 @@
             <p>$69.00</p>
           </li>
         </ul>
-      </div>
+      </section>
 
       <section id="updates">
         <div class="signup container">
