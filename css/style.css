@@ -377,7 +377,8 @@ li a:hover {
   width: 100%;
   -ms-flex: 0 0 100%;
       flex: 0 0 100%;
-  border: 0.25rem solid white;
+  border-top: 0.25rem solid white;
+  border-bottom: 0.25rem solid white;
 }
 
 .trends, .glasses, .sale, .bags {
@@ -385,6 +386,7 @@ li a:hover {
   -ms-flex: 0 0 50%;
       flex: 0 0 50%;
   border: 0.25rem solid white;
+
 }
 
 .mens {
@@ -393,18 +395,22 @@ li a:hover {
 
 .trends {
   background-image: url("../images/trends-category.jpg");
+  border-left: 0;
 }
 
 .glasses {
   background-image: url("../images/glasses-category.jpg");
+  border-right: 0;
 }
 
 .sale {
   background-image: url("../images/sale-category.jpg");
+  border-left: 0;
 }
 
 .bags {
   background-image: url("../images/bags-category.jpg");
+  border-right: 0;
 }
 
 .womens {
@@ -712,6 +718,14 @@ li a:hover {
     width: 25%;
     -ms-flex: 0 0 25%;
         flex: 0 0 25%;
+  }
+
+  .mens, .bags {
+    border-right: 0.25rem solid white;
+  }
+
+  .trends, .womens {
+    border-left: 0.25rem solid white;
   }
 
   .products h2 {
